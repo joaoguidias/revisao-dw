@@ -1,5 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-size: 16px;
+    font-family: "Schibsted Grotesk", sans-serif;
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    background-image: url('/imgs/programacao-em-c-como-fazer-1.jpg');
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+
+}
+a{
+    text-decoration: none;
+    
+
+}
+header{
+    height: 100px;
+    background-color: #430335;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #032e53;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+.menu-superior ul {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    /* Garante que nada saia dos limites do menu*/
+}
+
+.menu-superior li {
+    display: inline-block;/*Colocar os LI como blocos na mesma linha */
+
+    /*float: left; flutua todos os elementos a esquerda */
+
+}
+.menu-superior li a {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 39px 45px;
+    font-size: 15px;
+    color: rgb(245, 235, 235);
+}
+.menu-superior li a:hover{
+    background-color: #032e53;
+    color: #a10580;
+    border-bottom: 4px solid white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transform: translateY(-5px);
+    cursor: pointer;
+    height: 10px;
+    
+}
+.container{
+    padding: 0 20%;
+    height: calc(100% - 154px);
+}
+.main{
+     background-color: #1c1c1ec9;
+     min-height: 100%;
+     padding: 20;
+     
+     
+}
+.main h1{
+    color: #a01081;
+    text-align: center;
+    
+}
+.main p {
+    line-height: 1.5;
+}
+.subtitulo-main{
+    margin-bottom: 18px;
+    
+}
+.paragrafo-main a{
+    text-decoration: underline;
 }
