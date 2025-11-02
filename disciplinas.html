@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .container{
+            padding: 0 10%;
+        }
+        .main{
+           display: flex; 
+           flex-flow: row wrap;
+           gap: px;
+           align-items: center;
+           justify-content: center;
+           
+           
+        }
+        .botao-main{
+            height: 150px;
+            flex-basis: 350px;
+            border-radius: 12px;
+            
+            margin: 0px 60px;
+            border: none;
+            flex-grow: 1;   
+            cursor: pointer;
+            background-color: #d8d7d7;
+            font-size: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+
+             
+        }
+        .botao-main:hover{
+            transition: all 0.3s ease;
+            transform: scale(0.98);
+            box-shadow: 0 6px 12px #79045f79;
+            transform: translateY(-2px)
+
+
+        }
+        .meu:active {
+            transform: scale(0.98); /* Botão "afunda" um pouquinho */
+        }
+        .texto-disciplina{
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main p{
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+           <nav class="menu-superior">
+                <ul class="menu-superior ul">
+                    <li class="menu-superior li"><a href="/index.html">Home</a></li>
+                    <li class="menu-superior li"><a href="/disciplinas.html">Disciplinas</a></li>
+                    <li class="menu-superior li"><a href="horarios.html">Horários</a></li>
+                    <li class="menu-superior li"><a href="professores.html">Professores</a></li>
+                    <li class="menu-superior li"><a href="sobre.html">Sobre</a></li>
+                </ul>
+           </nav>
+    </header>
+    <div class="container">
+            <div class="main">
+                <button class="botao-main"><p><span class="texto-disciplina">Algoritmos e lógica de programação</span> <br>Professor:<i>Thiago Antonio da Silva</i></p></button>
+                <button class="botao-main"><p><span class="texto-disciplina">Modelagem de banco de dados</span> <br>Professor:<i>Hélio</i></p></button>
+                <button class="botao-main"><p><span class="texto-disciplina">Engenharia de Software </span><br>Professor:<i>Cida Zem</i></p></button>
+                <br>
+                <button class="botao-main"><p><span class="texto-disciplina">Sistemas operacionais e redes de computadores </span><br>Professor:<i>Serginho</i></p></button>
+                <button class="botao-main"><p><span class="texto-disciplina">Desenvolvimento Web 1</span><br>Professor:<i>Ronan</i></p></button>
+                <button class="botao-main"><p><span class="texto-disciplina">Design Digital 1</span><br>Professor:<i>Anderson</i></p></button>
+
+            </div>
+            
+        </div>
+        
+        <footer>
+            <p>Desenvolvido por <i><ins>João Guilherme Dias Pascolat</ins></i> &copy; 2025</p>
+        </footer>
+</body>
+</html>
